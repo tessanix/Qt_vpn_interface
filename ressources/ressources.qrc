@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="add_icon">images/add_button_icon.png</file>
+        <file alias="certif_icon">images/certif_1.png</file>
+        <file alias="import_files_icon">images/import_files_1.jpg</file>
+        <file alias="menu_button_icon">images/menu_icon_1.png</file>
+        <file alias="proxy_icon_1">images/proxy_1.png</file>
+        <file alias="proxy_icon_2">images/proxy_2.png</file>
+        <file alias="stats_icon">images/stats_1.png</file>
+        <file alias="settings_icon">images/settings_1.png</file>
+        <file alias="certif_icon_2">images/certif_2.png</file>
+        <file alias="hardware_icon_1">images/hardware_icon_1.png</file>
+        <file alias="hardware_icon_2">images/hardware_icon_2.png</file>
+        <file alias="copy_icon_1">images/copy_icon_1.png</file>
+        <file alias="update_icon_1">images/update_icon_1.png</file>
+        <file alias="drag_and_drop_img">images/upload_file.PNG</file>
+        <file alias="proxy_svg">images/proxy_2.svg</file>
+        <file alias="profile_save">images/profile_save.svg</file>
+        <file alias="certificate-1_svg">images/certificate-1.svg</file>
+        <file alias="hard_disk_svg">images/hard-disk.svg</file>
+        <file alias="settings-icon">images/004-gear.svg</file>
+        <file alias="certif_white_png">images/icons_svg/certificate-64.png</file>
+        <file alias="certif-icon">images/icons_svg/certificate-icon-64.png</file>
+        <file alias="proxy-icon">images/icons_svg/proxy-server-24.png</file>
+        <file alias="statistics-icon">images/icons_svg/analytics-80.png</file>
+        <file alias="close-icon">images/icons_svg/close-icon-24.png</file>
+        <file alias="minus-icon">images/icons_svg/subtract-icon-24.png</file>
+        <file alias="menu-icon">images/icons_svg/menu-24.png</file>
+        <file alias="hand_cursor">images/icons_svg/hand-cursor-32.png</file>
+        <file alias="orange_plus_icon">images/icons_svg/plus-50.png</file>
+        <file alias="certif_white_icon">images/icons_svg/certificate-black-64.png</file>
+        <file alias="hdd_icon">images/icons_svg/hdd-50.png</file>
+        <file alias="policy_icon">images/icons_svg/policy.png</file>
+        <file alias="hardware_icon">images/icons_svg/hardware.png</file>
+        <file alias="proxy_icon">images/icons_svg/server.png</file>
+        <file alias="cloud_icon">images/icons_svg/upload.png</file>
+    </qresource>
+    <qresource prefix="/stylesheets">
+        <file alias="Spy_theme">stylesheets/SpyBot.qss</file>
+        <file alias="Diff_theme">stylesheets/Diffnes.qss</file>
+        <file alias="Grav_theme">stylesheets/Gravira.qss</file>
+        <file alias="Diz_theme">stylesheets/Dizalty_custom.qss</file>
+        <file alias="sideMenu_style">stylesheets/sideMenu_style.qss</file>
+    </qresource>
+</RCC>

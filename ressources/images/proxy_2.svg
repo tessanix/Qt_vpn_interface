@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M195,60h122v30H195V60z"/>
+	<path class="st0" d="M135,60h30v30h-30V60z"/>
+	<path class="st0" d="M347,60h30v30h-30V60z"/>
+	<path class="st0" d="M195,180h122v30H195V180z"/>
+	<path class="st0" d="M135,180h30v30h-30V180z"/>
+	<path class="st0" d="M347,180h30v30h-30V180z"/>
+	<path class="st0" d="M195,300h122v30H195V300z"/>
+	<path class="st0" d="M135,300h30v30h-30V300z"/>
+	<path class="st0" d="M347,300h30v30h-30V300z"/>
+	<path class="st0" d="M512,452H298.4c-4.5-12.8-14.7-22.9-27.4-27.4V390h166V0H75v390h166v34.6c-12.8,4.5-22.9,14.7-27.4,27.4H0v30
+		h213.6c6.2,17.5,22.9,30,42.4,30s36.2-12.5,42.4-30H512V452z M407,240H105v-90h302V240z M407,30v90H105V30H407z M105,270h302v90
+		H105V270z M256,482c-8.3,0-15-6.7-15-15s6.7-15,15-15s15,6.7,15,15S264.3,482,256,482z"/>
+</g>
+</svg>
