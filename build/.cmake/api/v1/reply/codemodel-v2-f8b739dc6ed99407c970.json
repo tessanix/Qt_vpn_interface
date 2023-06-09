@@ -1,0 +1,168 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b7c7804cb31c3a382ded.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "pages",
+					"jsonFile" : "directory-pages-Debug-a85a6f6a2efed41d8f2a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "pages",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "custom_objects",
+					"jsonFile" : "directory-custom_objects-Debug-7ac8649aa4e9fc8c2827.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "custom_objects",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "Qt_vpn_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt_vpn_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt_vpn_interface-Debug-8689d38a1a4b47dc6c86.json",
+					"name" : "Qt_vpn_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt_vpn_interface_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt_vpn_interface_autogen-Debug-373634ea9607779243d2.json",
+					"name" : "Qt_vpn_interface_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt_vpn_interface_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt_vpn_interface_autogen_timestamp_deps-Debug-4509222421e946d05467.json",
+					"name" : "Qt_vpn_interface_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "custom_objects::@dd264447bfa268d3f0b9",
+					"jsonFile" : "target-custom_objects-Debug-a2e71359e4a407fa0df5.json",
+					"name" : "custom_objects",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "custom_objects_autogen::@dd264447bfa268d3f0b9",
+					"jsonFile" : "target-custom_objects_autogen-Debug-df5a664be611d7146341.json",
+					"name" : "custom_objects_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "custom_objects_autogen_timestamp_deps::@dd264447bfa268d3f0b9",
+					"jsonFile" : "target-custom_objects_autogen_timestamp_deps-Debug-050c8b313a11df7b2c87.json",
+					"name" : "custom_objects_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pages::@9df13ddeb1e47e4609dc",
+					"jsonFile" : "target-pages-Debug-c635b7caf36c31bba172.json",
+					"name" : "pages",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pages_autogen::@9df13ddeb1e47e4609dc",
+					"jsonFile" : "target-pages_autogen-Debug-b1b5376c21491e5df879.json",
+					"name" : "pages_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pages_autogen_timestamp_deps::@9df13ddeb1e47e4609dc",
+					"jsonFile" : "target-pages_autogen_timestamp_deps-Debug-7b374e5298e3cd7875c5.json",
+					"name" : "pages_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Users/Tessan/Codes/C++/Qt_vpn_interface/build",
+		"source" : "D:/Users/Tessan/Codes/C++/Qt_vpn_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
