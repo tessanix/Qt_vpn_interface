@@ -33,13 +33,10 @@ set(PROJECT_SOURCES
         ${CMAKE_AUTOUIC_SEARCH_PATHS}/page_5.ui
 )
 
-
+set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/ressources/logos.rc")
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(Qt_vpn_interface
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-    )
+    qt_add_executable(Qt_vpn_interface MANUAL_FINALIZATION ${PROJECT_SOURCES} ${APP_ICON_RESOURCE_WINDOWS} )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Qt_vpn_interface APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
@@ -52,9 +49,7 @@ else()
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(Qt_vpn_interface
-            ${PROJECT_SOURCES}
-        )
+        add_executable(Qt_vpn_interface ${PROJECT_SOURCES}  ${APP_ICON_RESOURCE_WINDOWS})
     endif()
 endif()
 

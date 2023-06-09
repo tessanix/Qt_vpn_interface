@@ -9,7 +9,8 @@
 #include "page_5.h"
 #include "overlay.h"
 #include "sidemenu.h"
-
+#include "thememanager.h"
+#include "button_footbar.h"
 
 namespace Ui {
 class MainWindow;
@@ -49,13 +50,15 @@ public slots:
 
 private:
 
+    ThemeManager* mythememanager = new ThemeManager(this);
+
     Overlay * shadowOverlay = new Overlay(this);
 
-    Page_1* page_1 = new Page_1();
-    Page_2* page_2 = new Page_2();
-    Page_3* page_3 = new Page_3();
-    Page_4* page_4 = new Page_4();
-    Page_5* page_5 = new Page_5();
+    Page_1* page_1 = new Page_1(mythememanager, this);
+    Page_2* page_2 = new Page_2(this);
+    Page_3* page_3 = new Page_3(mythememanager, this);
+    Page_4* page_4 = new Page_4(mythememanager, this);
+    Page_5* page_5 = new Page_5(this);
 
 
     sideMenu* sideMenuWidget  = new sideMenu(this);

@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
    // set app style sheet
-    QFile styleSheetFile(":/stylesheets/Diz_theme");
+//    QFile styleSheetFile(":/stylesheets/Diz_theme");
 
-    if(styleSheetFile.open(QFile::ReadOnly)){
-        QString styleSheet = QLatin1String(styleSheetFile.readAll());
-        app.setStyleSheet(styleSheet);
-    }
+//    if(styleSheetFile.open(QFile::ReadOnly)){
+//        QString styleSheet = QLatin1String(styleSheetFile.readAll());
+//        app.setStyleSheet(styleSheet);
+//    }
 
     MainWindow mainWin;
     mainWin.setWindowTitle(QString("Dizalty VPN"));

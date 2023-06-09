@@ -34,6 +34,8 @@
         <file alias="hardware_icon">images/icons_svg/hardware.png</file>
         <file alias="proxy_icon">images/icons_svg/server.png</file>
         <file alias="cloud_icon">images/icons_svg/upload.png</file>
+        <file alias="plus_icon_blue_64">images/icons_svg/icons8-plus-64.png</file>
+        <file alias="plus_icon_blue_86">images/icons_svg/icons8-plus-86.png</file>
     </qresource>
     <qresource prefix="/stylesheets">
         <file alias="Spy_theme">stylesheets/SpyBot.qss</file>

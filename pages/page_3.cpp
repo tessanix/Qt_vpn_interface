@@ -1,13 +1,13 @@
 #include "page_3.h"
 #include "ui_page_3.h"
 
-Page_3::Page_3(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Page_3)
+Page_3::Page_3(ThemeManager* thememanager, QWidget *parent) :
+    QWidget(parent), thememanager_ptr{thememanager}, ui(new Ui::Page_3)
 {
     ui->setupUi(this);
-    resize(400, height());
+    setAttribute(Qt::WA_StyledBackground);
 
+    resize(400, height());
     // INSTALL CURSOR ICON CHANGING ON BUTTONS
     ui->show_subpage_pkcs_button->installEventFilter(this);
     ui->show_subpage_hardware_button->installEventFilter(this);
@@ -32,6 +32,8 @@ Page_3::Page_3(QWidget *parent) :
     anim_pkcs_subpage_show->setEndValue(QPoint(x(), ui->slider_container_widget->y()));
 
 
+    ui->show_subpage_pkcs_button->setCheckable(true);
+    ui->show_subpage_hardware_button->setCheckable(true);
 
     connect(ui->show_subpage_pkcs_button, SIGNAL(clicked()),
            this              , SLOT(show_subpage_certif_pkcs()));
@@ -41,29 +43,29 @@ Page_3::Page_3(QWidget *parent) :
             this             , SLOT(show_subpage_certif_hardware()));
 
     ui->show_subpage_pkcs_button->setDisabled(true);
+    ui->show_subpage_pkcs_button->setChecked(true);
+
+    //ui->sub_widget_pkcs->setStyleSheet("background-color:rgb(63,186,170);"); //rgb(230, 115, 0);";
 
 }
 
 
+
 void Page_3::show_subpage_certif_pkcs(){
-    ui->sub_widget_pkcs->setStyleSheet("background-color: rgb(230, 115, 0);");
-    ui->show_subpage_pkcs_button->setStyleSheet("color:rgb(230, 115, 0);");
-
-    ui->show_subpage_hardware_button->setStyleSheet("color: rgb(9, 56, 94);");
-    ui->sub_widget_hardware->setStyleSheet("");
-
+//    thememanager_ptr->set_color_subpages_buttons(
+//                1, ui->sub_widget_pkcs, ui->show_subpage_pkcs_button,
+//                   ui->sub_widget_hardware, ui->show_subpage_hardware_button);
+    ui->show_subpage_hardware_button->setChecked(false);
     ui->show_subpage_pkcs_button->setDisabled(true);
     ui->show_subpage_hardware_button->setEnabled(true);
     anim_pkcs_subpage_show->start();
 }
 
 void Page_3::show_subpage_certif_hardware(){
-    ui->sub_widget_hardware->setStyleSheet("background-color: rgb(230, 115, 0);");
-    ui->show_subpage_hardware_button->setStyleSheet("color:rgb(230, 115, 0);");
-
-    ui->show_subpage_pkcs_button->setStyleSheet("color: rgb(9, 56, 94);");
-    ui->sub_widget_pkcs->setStyleSheet("");
-
+//    thememanager_ptr->set_color_subpages_buttons(
+//                2, ui->sub_widget_pkcs, ui->show_subpage_pkcs_button,
+//                   ui->sub_widget_hardware, ui->show_subpage_hardware_button);
+    ui->show_subpage_pkcs_button->setChecked(false);
     ui->show_subpage_hardware_button->setDisabled(true);
     ui->show_subpage_pkcs_button->setEnabled(true);
     anim_hardware_subpage_show->start();

@@ -8,8 +8,8 @@
 MainWindow::MainWindow(): QWidget(), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
     setFixedSize(400,650);
+
 
     ui->menuButton->installEventFilter(this);
 
@@ -62,8 +62,10 @@ MainWindow::MainWindow(): QWidget(), ui(new Ui::MainWindow)
     anim_group_hide->addAnimation(anim_sidemenu_hide);
     anim_group_hide->addAnimation(shadowOverlay->anim_opacity_decrease);
 
-    //show_menu();
+    //anim_group_hide->resume();
     hide_menu();
+
+    mythememanager->set_general_theme();
 }
 
 

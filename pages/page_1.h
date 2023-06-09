@@ -6,7 +6,7 @@
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QPropertyAnimation>
-//#include "sidemenu.h"
+#include "../custom_objects/thememanager.h"
 
 namespace Ui {
 class Page_1;
@@ -16,7 +16,7 @@ class Page_1 : public QWidget
 {
     Q_OBJECT
 public:
-    explicit Page_1( QWidget *parent = nullptr);
+    explicit Page_1( ThemeManager* thememanager, QWidget *parent = nullptr);
     ~Page_1();
     bool eventFilter(QObject *watched, QEvent *event);
 
@@ -27,6 +27,10 @@ public slots:
 private:
 
     Ui::Page_1 *ui;
+
+
+
+    ThemeManager* thememanager_ptr = nullptr;
     QPropertyAnimation* anim_url_subpage_show = new QPropertyAnimation(this);
     QPropertyAnimation* anim_file_subpage_show = new QPropertyAnimation(this);
 

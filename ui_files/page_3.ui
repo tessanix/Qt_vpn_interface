@@ -24,107 +24,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>401</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="url_subpage_layout">
-    <property name="topMargin">
-     <number>5</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <item>
-     <layout class="QGridLayout" name="gridLayout">
-      <property name="leftMargin">
-       <number>20</number>
-      </property>
-      <property name="rightMargin">
-       <number>20</number>
-      </property>
-      <item row="1" column="0">
-       <widget class="QWidget" name="sub_widget_pkcs" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>6</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>6</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(230, 115, 0);</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QWidget" name="sub_widget_hardware" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>6</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>6</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="show_subpage_pkcs_button">
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>13</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>PKCS #12</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="show_subpage_hardware_button">
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>13</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>HARDWARE TOKENS</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
   <widget class="QWidget" name="slider_container_widget" native="true">
    <property name="geometry">
     <rect>
@@ -352,7 +251,7 @@
          <rect>
           <x>0</x>
           <y>-10</y>
-          <width>391</width>
+          <width>401</width>
           <height>551</height>
          </rect>
         </property>
@@ -462,6 +361,77 @@
      </item>
     </layout>
    </widget>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>20</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="show_subpage_pkcs_button">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>PKCS #12</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="show_subpage_hardware_button">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>45</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>HARDWARE TOKENS</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <action name="action_move_widget1">
    <property name="text">

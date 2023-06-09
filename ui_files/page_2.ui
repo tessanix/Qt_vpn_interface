@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
@@ -31,6 +34,18 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="sizeConstraint">
      <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
     </property>
     <item>
      <spacer name="verticalSpacer_2">
@@ -115,8 +130,8 @@
      <widget class="QPushButton" name="add_proxy_button">
       <property name="maximumSize">
        <size>
-        <width>65</width>
-        <height>65</height>
+        <width>75</width>
+        <height>75</height>
        </size>
       </property>
       <property name="styleSheet">
@@ -127,12 +142,12 @@
       </property>
       <property name="icon">
        <iconset resource="../ressources/ressources.qrc">
-        <normaloff>:/icons/orange_plus_icon</normaloff>:/icons/orange_plus_icon</iconset>
+        <normaloff>:/icons/plus_icon_blue_86</normaloff>:/icons/plus_icon_blue_86</iconset>
       </property>
       <property name="iconSize">
        <size>
-        <width>80</width>
-        <height>80</height>
+        <width>86</width>
+        <height>86</height>
        </size>
       </property>
      </widget>

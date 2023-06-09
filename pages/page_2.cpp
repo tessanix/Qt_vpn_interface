@@ -2,10 +2,11 @@
 #include "ui_page_2.h"
 
 Page_2::Page_2(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Page_2)
+    QWidget(parent), ui(new Ui::Page_2)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_StyledBackground);
+
     //setAttribute(Qt::WA_StyledBackground);
     ui->add_proxy_button->installEventFilter(this);
     ui->verticalLayout->setAlignment(ui->proxy_pixmap, Qt::AlignHCenter);

@@ -20,9 +20,16 @@
 }*/
 
 
+QPushButton[objectName^="menuButton"]
+{
+background-color: transparent;
+border: none;
+}
+
 QWidget[objectName^="sideMenu"]
 {
    background-color: rgb(255, 255, 255);
+
 }
 
 
@@ -37,7 +44,7 @@ QWidget[objectName^="background_widget_hardware"]
 
 QWidget[objectName^="titleBar_widget"]
 {
-    background-color:rgb(4,117,156);
+    background-color:rgb(9, 56, 94);
 }
 
 
@@ -58,7 +65,7 @@ sideMenu QPushButton{
     font-weight: bold;
     text-align: left;
     margin-left: 40px;
-    color: rgb(4,117,156);
+    color: rgb(9, 56, 94);
 }
 
 Page_4 QPushButton{
@@ -74,14 +81,14 @@ Page_4 QPushButton{
 }
 
 Page_4 QPushButton::checked{
-    background-color: rgb(19,171,148); /*rgb(63,186,170);*/ /*rgb(4,117,156);*/
+    background-color:rgb(9, 56, 94);
     color: rgb(255, 255, 255);
 
 }
 
 QPushButton[objectName^="set_disconnect_shortcut_button"]{
     background-color:rgb(216, 213, 223);
-    color: rgb(4,117,156);
+    color: rgb(9, 56, 94);
 
 }
 
@@ -90,7 +97,7 @@ QPushButton[objectName^="set_disconnect_shortcut_button"]{
 QPushButton[objectName^="next_button"],
 QPushButton[objectName^="add_certificate_button"]{
 
-    background-color:rgb(19,171,148);
+    background-color: rgb(230, 115, 0);
     color: rgb(255, 255, 255);
     border: none;
 }
@@ -108,7 +115,7 @@ QPushButton[objectName^="show_subpage_hardware_button"]
 QPushButton[objectName^="show_url_subpage_button"],
 QPushButton[objectName^="show_subpage_pkcs_button"]
 {
-    color:rgb(19,171,148);
+    color:rgb(230, 115, 0);
 }
 
 QLabel[objectName^="mainTitle"]
@@ -128,17 +135,6 @@ QLabel[objectName^="label_title_pkcs"], QLabel[objectName^="label_title_hardware
     color: rgba(148, 205, 228, 255);
     font-size: 20px;
 
-}
-
-QLabel[objectName^="title_section_vpn_proto"], QLabel[objectName^="title_section_connect_timeout"],
-QLabel[objectName^="title_section_seamless_tunnel"], QLabel[objectName^="title_section_shortcut_min"],
-QLabel[objectName^="title_section_portal_detect"], QLabel[objectName^="title_section_crash_report"],
-QLabel[objectName^="title_section_deviceID"], QLabel[objectName^="title_section_launch_option"],
-QLabel[objectName^="title_section_software_update"], QLabel[objectName^="title_section_tray_icon_style"],
-QLabel[objectName^="title_section_confirm_dialogs"], QLabel[objectName^="title_section_theme"]
-
-{
-    color:rgb(19,171,148);
 }
 
 QLineEdit[objectName^="line_edit_url"]
@@ -162,11 +158,6 @@ QLineEdit[objectName^="line_edit_url"]
 
 }*/
 
-QPushButton[objectName^="menuButton"]
-{
-background-color: transparent;
-border: none;
-}
 
 
 /*QPushButton::pressed
